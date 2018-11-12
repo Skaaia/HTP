@@ -1,7 +1,6 @@
 package com.htp;
 
 public class task13 {
-    public task13(){}
 
     public static void main(String[] args) {
         String[] stringsTask13 ={"asf","asd", "ghj","eyt","ejh","asd","mss" };

@@ -1,7 +1,6 @@
 package com.htp;
 
 public class task1 {
-    public task1(){}
 
     public static void main(String[] args) {
         int tmp;

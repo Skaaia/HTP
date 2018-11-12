@@ -1,7 +1,6 @@
 package com.htp;
 
 public class task4 {
-    public task4(){}
 
     public static void main(String[] args) {
         double AvgVal = 0;

@@ -3,7 +3,6 @@ package com.htp;
 import java.util.Arrays;
 
 public class task16 {
-    public task16(){}
 
     public static void main(String[] args) {
         int[] task16  = {5,2,9,21,21,4,21,9,7};

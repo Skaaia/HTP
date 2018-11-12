@@ -1,7 +1,6 @@
 package com.htp;
 
 public class task3 {
-    public task3(){}
 
     public static void main(String[] args) {
         for(int u=0;u<=4;u++){

@@ -1,7 +1,6 @@
 package com.htp;
 
 public class task9 {
-    public task9(){}
 
     public static void main(String[] args) {
         int[] task9  = {5,2,9,21,21,4,21,8,7};
