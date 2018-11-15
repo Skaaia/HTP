@@ -1,4 +1,6 @@
-package lesson3;
+package com.lesson3;
+
+import java.util.Objects;
 
 public class Bus implements Comparable<Bus> {
     private final String carBrand;
@@ -104,14 +106,32 @@ public class Bus implements Comparable<Bus> {
                 ", dist=" + dist +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Bus bus = (Bus) o;
+        return startExp == bus.startExp &&
+                number == bus.number &&
+                routeNumber == bus.routeNumber &&
+                dist == bus.dist &&
+                Objects.equals(carBrand, bus.carBrand) &&
+                Objects.equals(driverSurname, bus.driverSurname);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(carBrand, startExp, driverSurname, number, routeNumber, dist);
+    }
+
     @Override
     public int compareTo(Bus o)
     {
         return o.distC()-this.distC();
     }
     public int distC(){
-        int distR = dist;
-        return distR;
+        return dist;
     }
 
 }
