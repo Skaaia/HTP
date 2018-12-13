@@ -2,7 +2,7 @@ package com.skaaria.task4;
 
 import java.util.Objects;
 
-public class Student {
+public class Student implements Comparable<Student> {
     private String name;
     private String surname;
     private int age;
@@ -87,5 +87,14 @@ public class Student {
                 ", avgMark=" + avgMark +
                 '}';
     }
-
+    @Override
+    public int compareTo(Student o) {
+        if (this.age>o.age){
+            return 1;
+        }
+        if (this.age == o.age){
+            return 0;
+        }
+        else return -1;
+    }
 }

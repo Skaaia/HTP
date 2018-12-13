@@ -18,8 +18,6 @@ public class Test {
         for (Student element : studentsTreeSet){
             if (count % 2 == 0){
                 System.out.println(element);
-            }else {
-                studentsTreeSet.remove(count);
             }
             count++;
         }
